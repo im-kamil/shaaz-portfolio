@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* Home Image */
+#home{
+    background-image: url(img7.jpg.jpeg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+/* about image  */
+#aboutimg{
+    background-image: url(img5.jpg.jpeg);
+    min-height: 620px;
+    background-position: left center;
+    background-size: 40% 120%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+/* Services Section */
+#services {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+   
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    border: 1px solid black;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to top rgb(255, 45, 45) 50%, white 50%);
+    background-size: 100% 200%;
+    transition: all 0.8s;
+}
+
+.box:hover {
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px rgb(255, 45, 45);
+}
+
+.box img {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    padding: 10px;
+}
+/* portfolio */
+#img1{
+    background: url(img2.jpg.jpeg);
+    min-height: 600px;
+    background-position: left center;
+    background-size: 40% 90%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+#img2{
+    background: url(img1.jpg.jpeg);
+    min-height: 600px;
+    background-position: right center;
+    background-size: 40% 90%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+#img3{
+    background: url(img3.jpg.jpeg);
+    min-height: 600px;
+    background-position: left center;
+    background-size: 40% 90%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+#img4{
+    background: url(img4.jpg.jpeg);
+    min-height: 600px;
+    background-position: right center;
+    background-size: 40% 90%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+/* footer */
+body {
+    background: #ff5f6d;
+    background: -webkit-linear-gradient(to right, #ff5f6d, #ffc371);
+    background: linear-gradient(to right, #ff5f6d, #ffc371);
+    min-height: 100vh;
+  }
+  
+  #button-addon1 {
+    color: #ffc371;
+  }
+  
+  i {
+    color: #ffc371;
+  }
+  
+  .form-control::placeholder {
+    font-size: 0.95rem;
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  .form-control.shadow-0:focus {
+    box-shadow: none;
+  }
+  .wrapper .icon{
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 22px;
+    display: inline-block;
+    align-items: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    color: #333;
+    text-decoration: none;
+  }
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    line-height: 1.5;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background-color: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  .wrapper .facebook:hover,
+  .wrapper .facebook:hover .tooltip,
+  .wrapper .facebook:hover .tooltip::before {
+    background-color: #3b5999;
+    color: #ffffff;
+  }
+  .wrapper .twitter:hover,
+  .wrapper .twitter:hover .tooltip,
+  .wrapper .twitter:hover .tooltip::before {
+    background-color: #46c1f6;
+    color: #ffffff;
+  }
+  .wrapper .instagram:hover,
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip::before {
+    background-color: #e1306c;
+    color: #ffffff;
+  }
+  .wrapper .github:hover,
+  .wrapper .github:hover .tooltip,
+  .wrapper .github:hover .tooltip::before {
+    background-color: #333333;
+    color: #ffffff;
+  }
+  .wrapper .youtube:hover,
+  .wrapper .youtube:hover .tooltip,
+  .wrapper .youtube:hover .tooltip::before {
+    background-color: #de463b;
+    color: #ffffff;
+  }
+/* media queries */
+@media screen and (max-width : 760px){
+    #aboutimg{
+        background-size: cover;
+    }
+    #img1, #img2, #img3, #img4{
+        margin-bottom: 3rem;
+        background-size: cover;
+    }
+    #contact img{
+        width: 100% !important;
+    }
+}
